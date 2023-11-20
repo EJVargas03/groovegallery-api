@@ -14,7 +14,7 @@ const port = Number(process.env.PORT)
 const app = express()
 
 app.use(morgan(process.env.MORGAN_LOG))
-app.use(cors({ origin: process.env.CORS_ORIGIN }))
+app.use(cors({origin: process.env.CORS_ORIGIN}))
 app.use(helmet())
 
 app.use('/', router)
